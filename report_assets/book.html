@@ -1,0 +1,60 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head><base href="http://localhost/appointment_system/">
+    <title>Book Appointment</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/validation.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Book Appointment</h1>
+
+    
+    <form method="POST"
+          name="bookForm"
+          onsubmit="return validateBookForm()">
+
+        <input type="date" name="date">
+
+        <input type="time" name="time">
+
+        <select name="service">
+            <option value="">Select Service</option>
+            <option value="Medical Consultation">Medical Consultation</option>
+            <option value="Dental Checkup">Dental Checkup</option>
+            <option value="Legal Consultation">Legal Consultation</option>
+            <option value="Financial Advisory">Financial Advisory</option>
+            <option value="Career Counseling">Career Counseling</option>
+            <option value="Therapy Session">Therapy Session</option>
+            <option value="Fitness Coaching">Fitness Coaching</option>
+            <option value="Beauty & Self-Care">Beauty & Self-Care</option>
+            <option value="Technical Support">Technical Support</option>
+            <option value="Academic Advising">Academic Advising</option>
+        </select>
+
+        <button type="submit" name="book">
+            Book Now
+        </button>
+
+    </form>
+
+    <div class="links">
+
+        <a href="dashboard.php">
+            Back to Dashboard
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
